@@ -1,0 +1,18 @@
+kind: Pod
+apiVersion: v1
+metadata: 
+  name: nginx
+  labels:
+    app: nginx
+spec:
+  containers:
+    - name: nginx
+      image: nginx
+      ports: 
+      - containerPort: 8080
+  tolerations:
+    - key: "notneded"
+      operator: "Equal"
+      value: "true"
+      effect:  "NoSchedule"
+

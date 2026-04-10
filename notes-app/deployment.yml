@@ -18,3 +18,12 @@ spec:
         image: aman9048/notes-app:latest
         ports:
         - containerPort: 8000
+        livenessProbe:
+          httpGet:
+            path: /
+            port: 8000
+        readinessProbe:
+          httpGet:
+            path: /
+            port: 8000
+
