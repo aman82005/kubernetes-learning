@@ -1,0 +1,7 @@
+kind: Amanskill
+apiVersion: amandevops.com/v1
+metadata:
+  name: kubernetes
+spec:
+  name: kubernetes used for container orchestration 
+
